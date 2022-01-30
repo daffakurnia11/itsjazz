@@ -47,7 +47,7 @@
               <tr>
                 <td>2.</td>
                 <td class="fw-bold">7 Something</td>
-                <td>IDPTD</td>
+                <td>IDPDT</td>
                 <td>
                   <a target="_bank" href="https://open.spotify.com/track/21GmOpmwrddK9Jw574MWnA?si=af7a04ec24724673"><i
                       class="fas fa-play"></i></a>
@@ -74,7 +74,7 @@
               <tr>
                 <td>5.</td>
                 <td class="fw-bold">Takkan Bisa</td>
-                <td>CALC ft. Julian T. & Imaniar C.</td>
+                <td>PAJIW Ft. Barlenty</td>
                 <td>
                   <!-- <a target="_bank" href="https://open.spotify.com/track/5IgYaq6a02pVXoTy4Yqrr4?si=2068b86d553c4452"><i
                             class="fas fa-play"></i></a> -->
