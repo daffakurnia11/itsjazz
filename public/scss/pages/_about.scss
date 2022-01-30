@@ -1,0 +1,96 @@
+#aboutHeader {
+  // min-height: 100vh;
+  background: url(../img/about-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    min-height: 100vh;
+    background: linear-gradient(
+      180deg,
+      $color-black 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    .container {
+      padding: 0 8rem;
+      @media screen and (max-width: 768px) {
+        padding: 0 1.5rem;
+      }
+    }
+    &-title {
+      font: bold 5.5rem/6rem $font-vietnam;
+      color: $color-white;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+#aboutFrontman {
+  margin: 5rem auto;
+  .frontman-title {
+    font: bold 3.125rem/4rem $font-vietnam;
+    color: $color-white;
+    @media screen and (max-width: 576px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  .frontman-list {
+    max-width: 1000px;
+    .frontman-photo {
+      display: block;
+      width: 100%;
+      margin: 2rem auto 0.5rem;
+    }
+    .frontman-name {
+      font: 600 0.75rem/1rem $font-vietnam;
+      color: $color-white;
+    }
+  }
+}
+
+#aboutKabinet {
+  .kabinet-title {
+    max-width: 1000px;
+    font: bold 3.25rem/4rem $font-vietnam;
+    color: $color-white;
+    text-transform: uppercase;
+    @media screen and (max-width: 576px) {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+    span {
+      font: bold 2.5rem/3.25rem $font-vietnam;
+      color: $color-white;
+      text-transform: uppercase;
+      @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+  }
+  .kabinet-content {
+    width: 220px;
+    .kabinet-photo {
+      display: block;
+      width: 100%;
+    }
+    .kabinet-position {
+      font: bold 1.125rem/1.5rem $font-vietnam;
+      color: $color-white;
+    }
+    .kabinet-detail {
+      font: 600 0.75rem/1.25rem $font-vietnam;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+@import "root";
+
+@import "component/navbar";
+@import "component/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/merchandise";
+@import "pages/jazzineergigs";
+@import "pages/concert";
+@import "pages/segment";
+@import "pages/regis";

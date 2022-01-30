@@ -1,0 +1,1227 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar.bg-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar-toggler .fas {
+  color: #fff;
+}
+
+.navbar-nav .nav-item {
+  margin: auto 0.75rem;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+  border-radius: 0;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  font: 0.8rem/1rem "Be Vietnam Pro", sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bolder;
+}
+
+footer .footer-title {
+  font: 600 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+footer .footer-title em {
+  font-style: italic;
+}
+
+#landingHeader {
+  background: url(../img/landing-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#landingHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#landingHeader .header .container {
+  padding: 0 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #landingHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#landingHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #landingHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #landingHeader .header-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+#landingHeader .header-subtitle {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font: 600 3rem/3rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  #landingHeader .header-subtitle {
+    margin-left: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+#albums {
+  margin: 5rem auto;
+}
+
+#albums .album-disc {
+  width: 300px;
+  max-width: 100%;
+}
+
+#albums .album-showcase {
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#albums .album-title {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 2rem;
+}
+
+#albums .album-title::before {
+  position: absolute;
+  content: "/";
+  left: -2rem;
+  top: 0;
+}
+
+#albums .album-table tr:first-of-type {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#albums .album-table tr {
+  border-bottom: 1px solid #fff;
+}
+
+#albums .album-table tr td {
+  font: 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  padding: 1rem;
+  white-space: nowrap !important;
+}
+
+#albums .album-table tr td .fas {
+  font-size: 0.65rem;
+}
+
+#main-segments .segment-title {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 2rem;
+}
+
+#main-segments .segment-title::before {
+  position: absolute;
+  content: "/";
+  left: -2rem;
+  top: 0;
+}
+
+#main-segments .segment-button {
+  display: block;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#main-segments .segment-picture {
+  width: 100%;
+  cursor: pointer;
+}
+
+#main-segments .segment-picture.active {
+  border: 3px solid #fff;
+  box-sizing: border-box;
+}
+
+#main-segments .segment-name {
+  position: relative;
+  width: fit-content;
+}
+
+#main-segments .segment-name #segmentName {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  #main-segments .segment-name #segmentName {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+#main-segments .segment-name .fas:first-of-type {
+  font-size: 1.5rem;
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 576px) {
+  #main-segments .segment-name .fas:first-of-type {
+    font-size: 1rem;
+    left: -1.75rem;
+  }
+}
+
+#main-segments .segment-name .fas:last-of-type {
+  font-size: 1.5rem;
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  transform: rotateY(180deg) translateY(-50%);
+}
+
+@media screen and (max-width: 576px) {
+  #main-segments .segment-name .fas:last-of-type {
+    font-size: 1rem;
+    right: -1.75rem;
+  }
+}
+
+#main-gigs {
+  margin-top: 6rem;
+}
+
+#main-gigs .gigs-subtitle {
+  font: 800 2.25rem/3rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #main-gigs .gigs-subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #main-gigs .gigs-subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+#main-gigs .gigs-title {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 4rem;
+  font: 800 4rem/5rem "Be Vietnam Pro", sans-serif;
+}
+
+#main-gigs .gigs-title::before {
+  position: absolute;
+  content: "/";
+  left: -4rem;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #main-gigs .gigs-title {
+    font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #main-gigs .gigs-title::before {
+    position: absolute;
+    content: "/";
+    left: -3rem;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #main-gigs .gigs-title {
+    font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 2rem;
+  }
+  #main-gigs .gigs-title::before {
+    position: absolute;
+    content: "/";
+    left: -2rem;
+    top: 0;
+  }
+}
+
+#main-gigs .gigs-picture {
+  width: 100%;
+}
+
+#main-gigs .gigs-button {
+  display: block;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+#aboutHeader {
+  background: url(../img/about-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#aboutHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#aboutHeader .header .container {
+  padding: 0 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #aboutHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#aboutHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #aboutHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #aboutHeader .header-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+}
+
+#aboutFrontman {
+  margin: 5rem auto;
+}
+
+#aboutFrontman .frontman-title {
+  font: bold 3.125rem/4rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  #aboutFrontman .frontman-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+#aboutFrontman .frontman-list {
+  max-width: 1000px;
+}
+
+#aboutFrontman .frontman-list .frontman-photo {
+  display: block;
+  width: 100%;
+  margin: 2rem auto 0.5rem;
+}
+
+#aboutFrontman .frontman-list .frontman-name {
+  font: 600 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#aboutKabinet .kabinet-title {
+  max-width: 1000px;
+  font: bold 3.25rem/4rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  #aboutKabinet .kabinet-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+#aboutKabinet .kabinet-title span {
+  font: bold 2.5rem/3.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  #aboutKabinet .kabinet-title span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+#aboutKabinet .kabinet-content {
+  width: 220px;
+}
+
+#aboutKabinet .kabinet-content .kabinet-photo {
+  display: block;
+  width: 100%;
+}
+
+#aboutKabinet .kabinet-content .kabinet-position {
+  font: bold 1.125rem/1.5rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#aboutKabinet .kabinet-content .kabinet-detail {
+  font: 600 0.75rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#merchHeader {
+  background: url(../img/merch-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#merchHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#merchHeader .header .container {
+  padding: 0 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #merchHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#merchHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #merchHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #merchHeader .header-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+}
+
+#merchCatalog {
+  max-width: 1100px;
+  margin-top: 4rem;
+}
+
+#merchCatalog .catalog-title {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#merchCatalog .catalog-title::before {
+  position: absolute;
+  content: "/";
+  left: -2rem;
+  top: 0;
+}
+
+#merchCatalog .catalog-name {
+  display: block;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  background: transparent;
+}
+
+#merchCatalog .catalog-name:not(.collapsed) {
+  background: #fff;
+  color: #000;
+}
+
+#merchCatalog .catalog-box {
+  border: 0.5px solid #313131;
+  box-sizing: border-box;
+  max-width: 250px;
+  height: 250px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#merchCatalog .catalog-box .catalog-pict {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#merchCatalog .catalog-desc {
+  font: bold 0.75rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#merchBundles {
+  margin-top: 3.5rem;
+  max-width: 525px;
+}
+
+#merchBundles .bundle-title {
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 2rem;
+}
+
+#merchBundles .bundle-title::before {
+  position: absolute;
+  content: "/";
+  left: -2rem;
+  top: 0;
+}
+
+#merchBundles .bundle-table tr:first-of-type {
+  border-top: 1px solid #fff;
+}
+
+#merchBundles .bundle-table tr {
+  border-bottom: 1px solid #fff;
+}
+
+#merchBundles .bundle-table tr th {
+  padding: 0.875rem;
+  font: bold 0.875rem/1.125rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap !important;
+}
+
+#merchBundles .bundle-table tr td {
+  padding: 0.875rem;
+  font: 400 0.875rem/1.125rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  white-space: nowrap !important;
+}
+
+#merchBundles .bundle-table tr td strong {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  white-space: nowrap !important;
+}
+
+.merch-button {
+  display: block;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+#gigsHeader {
+  background: url(../img/jazzineer-gigs-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#gigsHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#gigsHeader .header .container {
+  min-height: 100vh;
+  padding: 0 8rem;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #gigsHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#gigsHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #gigsHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #gigsHeader .header-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+}
+
+#gigsHeader .header-action {
+  position: absolute;
+  z-index: 2;
+  bottom: 3rem;
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+  #gigsHeader .header-action {
+    font-size: 1rem;
+  }
+}
+
+#ourJourney {
+  padding-top: 6rem;
+}
+
+#ourJourney .journey-category {
+  display: block;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+  background: transparent;
+}
+
+#ourJourney .journey-category:not(.collapsed) {
+  background: #fff;
+  color: #000;
+}
+
+#ourJourney .journey-month {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 1rem;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#ourJourney .journey-box {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+#ourJourney .journey-detail {
+  font: bold 1rem/1.5rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+#ourJourney .journey-detail .journey-date {
+  font: italic 400 1rem/1.5rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#ourJourney .journey-detail::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  left: -1.5rem;
+  top: 0;
+  transform: translateY(50%);
+}
+
+#concertHeader {
+  background: url(../img/konser-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#concertHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#concertHeader .header .container {
+  padding: 0 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  #concertHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#concertHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #concertHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #concertHeader .header-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+}
+
+#concertAbout {
+  min-height: 600px;
+  position: relative;
+}
+
+#concertAbout .about .about-text {
+  max-width: 920px;
+  font: 0.9rem/1.75rem "Be Vietnam Pro", sans-serif;
+  text-align: justify;
+  color: #fff;
+}
+
+#concertAbout .about .about-text strong {
+  font: 600 1.1rem/1.5rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#concertAbout .about-bg {
+  width: 775px;
+  max-width: 100%;
+  padding: 1rem;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#aboutPerformed .performed-title {
+  font: bold 2.5rem/3rem "Be Vietnam Pro", sans-serif;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+#aboutPerformed .performed-title::after {
+  content: "";
+  margin-top: 0.5rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  #aboutPerformed .performed-title {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+
+#aboutPerformed .performed-showcase {
+  font: bold 0.9rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#aboutPerformed .performed-photo {
+  width: 100%;
+}
+
+#aboutPerformed .performed-place {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  width: fit-content;
+  padding: 0.35rem 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  font: 300 0.5rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#aboutPerformed .performed-content {
+  max-width: 400px;
+}
+
+#aboutPerformed .performed-content .performed-name {
+  font: bold 1.125rem/1.125rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+#aboutPerformed .performed-content .performed-detail {
+  font: normal 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#aboutPerformed .performed-content .table-responsive .table {
+  margin: 1.25rem 0;
+}
+
+#aboutPerformed .performed-content .table-responsive .table tr:first-of-type {
+  border-top: 1px solid #fff;
+}
+
+#aboutPerformed .performed-content .table-responsive .table tr {
+  border-bottom: 1px solid #fff;
+}
+
+#aboutPerformed .performed-content .table-responsive .table tr td {
+  padding: 0.75rem;
+  font: 0.75rem/0.75rem "Be Vietnam Pro", sans-serif;
+  letter-spacing: -0.04em;
+  color: #fff;
+  white-space: nowrap !important;
+}
+
+#segmentHeader {
+  background: url(../img/segment-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#segmentHeader .header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+#segmentHeader .header .container {
+  min-height: 100vh;
+  padding: 0 8rem;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #segmentHeader .header .container {
+    padding: 0 1.5rem;
+  }
+}
+
+#segmentHeader .header-title {
+  font: bold 5.5rem/6rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  #segmentHeader .header-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #segmentHeader .header-title {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+  }
+}
+
+#segmentHeader .header-action {
+  position: absolute;
+  z-index: 2;
+  bottom: 3rem;
+  font: bold 1.5rem/1.75rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  #segmentHeader .header-action {
+    font-size: 1rem;
+  }
+}
+
+#its-jazz-segments {
+  padding-top: 6rem;
+}
+
+#its-jazz-segments .segment-button {
+  padding: 1rem 0;
+  border: none;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+#its-jazz-segments .segment-button .segment-title {
+  font: bold 1.25rem/1.5rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  #its-jazz-segments .segment-button .segment-title {
+    font-size: 1rem;
+  }
+}
+
+#its-jazz-segments .segment-button .fas {
+  font-size: 1rem;
+  color: #fff;
+}
+
+#its-jazz-segments .segment-content {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #fff;
+}
+
+#its-jazz-segments .segment-content .segment-desc {
+  font: 0.75rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+}
+
+#its-jazz-segments .segment-content .segment-link {
+  font: bold 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: "Be Vietnam Pro", sans-serif;
+}
+
+#its-jazz-segments .segment-content .underlined-title {
+  width: 100%;
+  font: bold 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding: 0.75rem 0;
+}
+
+#its-jazz-segments .segment-content .circled-desc {
+  font: 500 0.75rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  position: relative;
+  margin-left: 1.25rem;
+}
+
+#its-jazz-segments .segment-content .circled-desc::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: -1rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  transform: translateY(50%);
+}
+
+#regisForm .album-disc {
+  width: 350px;
+  max-width: 100%;
+}
+
+#regisForm .subscription-text {
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#regisForm .subscription-input {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 330px;
+  max-width: 100%;
+  font: bold 1rem/1.25rem "Be Vietnam Pro", sans-serif;
+  padding: 0.5rem 1rem;
+  margin-top: -1px;
+  color: #fff;
+}
+
+#regisForm .subscription-input:focus {
+  outline: 0;
+}
+
+#regisForm .subscription-submit {
+  margin-top: 1rem;
+  display: block;
+  border: none;
+  font: bold 0.75rem/1rem "Be Vietnam Pro", sans-serif;
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

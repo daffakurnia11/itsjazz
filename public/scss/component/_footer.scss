@@ -1,0 +1,9 @@
+footer {
+  .footer-title {
+    font: 600 1.5rem/1.75rem $font-vietnam;
+    color: $color-white;
+    & em {
+      font-style: italic;
+    }
+  }
+}

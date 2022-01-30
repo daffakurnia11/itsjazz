@@ -1,0 +1,37 @@
+#regisForm {
+  .album-disc {
+    width: 350px;
+    max-width: 100%;
+  }
+  .subscription {
+    &-text {
+      font: bold 1rem/1.25rem $font-vietnam;
+      color: $color-white;
+      margin-bottom: 1.5rem;
+    }
+    &-input {
+      border: 1px solid $color-white;
+      box-sizing: border-box;
+      background-color: transparent;
+      width: 330px;
+      max-width: 100%;
+      font: bold 1rem/1.25rem $font-vietnam;
+      padding: 0.5rem 1rem;
+      margin-top: -1px;
+      color: $color-white;
+      &:focus {
+        outline: 0;
+      }
+    }
+    &-submit {
+      margin-top: 1rem;
+      display: block;
+      border: none;
+      font: bold 0.75rem/1rem $font-vietnam;
+      color: $color-black;
+      background-color: $color-white;
+      padding: 0.5rem 2rem;
+      text-transform: uppercase;
+    }
+  }
+}

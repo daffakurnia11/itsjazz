@@ -1,0 +1,25 @@
+@mixin slash-title($right) {
+  font: bold 1.5rem/1.75rem $font-vietnam;
+  color: $color-white;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: $right;
+  &::before {
+    position: absolute;
+    content: "/";
+    left: -$right;
+    top: 0;
+  }
+}
+
+@mixin circle-button() {
+  display: block;
+  border: 1px solid $color-white;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  font: bold 1rem/1.25rem $font-vietnam;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+}

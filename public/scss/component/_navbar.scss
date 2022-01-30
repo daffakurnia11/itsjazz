@@ -1,0 +1,29 @@
+.navbar {
+  &.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  &-toggler .fas {
+    color: $color-white;
+  }
+  &-nav {
+    .nav-item {
+      margin: auto 0.75rem;
+      .dropdown-menu {
+        border-radius: 0;
+        .dropdown-item {
+          font-family: $font-vietnam;
+          font-size: 0.8rem;
+          line-height: 1.25rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .nav-link {
+      font: 0.8rem/1rem $font-vietnam;
+      text-transform: uppercase;
+      &.active {
+        font-weight: bolder;
+      }
+    }
+  }
+}

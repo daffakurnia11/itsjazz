@@ -1,0 +1,110 @@
+#merchHeader {
+  // min-height: 100vh;
+  background: url(../img/merch-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    min-height: 100vh;
+    background: linear-gradient(
+      180deg,
+      $color-black 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    .container {
+      padding: 0 8rem;
+      @media screen and (max-width: 768px) {
+        padding: 0 1.5rem;
+      }
+    }
+    &-title {
+      font: bold 5.5rem/6rem $font-vietnam;
+      color: $color-white;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+#merchCatalog {
+  max-width: 1100px;
+  margin-top: 4rem;
+  .catalog-title {
+    @include slash-title(2rem);
+    margin-bottom: 2rem;
+  }
+  .catalog-name {
+    @include circle-button();
+    display: inline-block;
+    background: transparent;
+  }
+  .catalog-name:not(.collapsed) {
+    background: $color-white;
+    color: $color-black;
+  }
+  .catalog-box {
+    border: 0.5px solid #313131;
+    box-sizing: border-box;
+    max-width: 250px;
+    height: 250px;
+    padding: 1.25rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .catalog-pict {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .catalog-desc {
+    font: bold 0.75rem/1.25rem $font-vietnam;
+    color: $color-white;
+  }
+}
+
+#merchBundles {
+  margin-top: 3.5rem;
+  max-width: 525px;
+  .bundle-title {
+    @include slash-title(2rem);
+  }
+  .bundle-table {
+    & tr:first-of-type {
+      border-top: 1px solid $color-white;
+    }
+    & tr {
+      border-bottom: 1px solid $color-white;
+      th {
+        padding: 0.875rem;
+        font: bold 0.875rem/1.125rem $font-vietnam;
+        color: $color-white;
+        text-transform: uppercase;
+        white-space: nowrap !important;
+      }
+      td {
+        padding: 0.875rem;
+        font: 400 0.875rem/1.125rem $font-vietnam;
+        color: $color-white;
+        white-space: nowrap !important;
+        strong {
+          display: inline-block;
+          font-weight: bold;
+          margin-right: 0.5rem;
+          white-space: nowrap !important;
+        }
+      }
+    }
+  }
+}
+.merch-button {
+  @include circle-button();
+  width: fit-content;
+}

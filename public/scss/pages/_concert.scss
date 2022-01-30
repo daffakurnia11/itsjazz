@@ -1,0 +1,130 @@
+#concertHeader {
+  // min-height: 100vh;
+  background: url(../img/konser-header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    min-height: 100vh;
+    background: linear-gradient(
+      180deg,
+      $color-black 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    .container {
+      padding: 0 8rem;
+      @media screen and (max-width: 768px) {
+        padding: 0 1.5rem;
+      }
+    }
+    &-title {
+      font: bold 5.5rem/6rem $font-vietnam;
+      color: $color-white;
+      text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+#concertAbout {
+  min-height: 600px;
+  position: relative;
+  .about {
+    .about-text {
+      max-width: 920px;
+      font: 0.9rem/1.75rem $font-vietnam;
+      text-align: justify;
+      color: $color-white;
+      strong {
+        font: 600 1.1rem/1.5rem $font-vietnam;
+        color: $color-white;
+      }
+    }
+  }
+  .about-bg {
+    width: 775px;
+    max-width: 100%;
+    padding: 1rem;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#aboutPerformed {
+  .performed-title {
+    font: bold 2.5rem/3rem $font-vietnam;
+    letter-spacing: -0.04em;
+    color: $color-white;
+    text-transform: uppercase;
+    width: fit-content;
+    &::after {
+      content: "";
+      margin-top: 0.5rem;
+      display: block;
+      width: 100%;
+      border: 1px solid #ffffff;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+  }
+  .performed-showcase {
+    font: bold 0.9rem/1.25rem $font-vietnam;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+  .performed-photo {
+    width: 100%;
+  }
+  .performed-place {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    width: fit-content;
+    padding: 0.35rem 1rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    font: 300 0.5rem/1rem $font-vietnam;
+    color: $color-white;
+  }
+  .performed-content {
+    max-width: 400px;
+    .performed-name {
+      font: bold 1.125rem/1.125rem $font-vietnam;
+      color: $color-white;
+      padding-bottom: 0.5rem;
+    }
+    .performed-detail {
+      font: normal 0.75rem/1rem $font-vietnam;
+      color: $color-white;
+    }
+    .table-responsive .table {
+      margin: 1.25rem 0;
+      tr:first-of-type {
+        border-top: 1px solid $color-white;
+      }
+      tr {
+        border-bottom: 1px solid $color-white;
+        td {
+          padding: 0.75rem;
+          font: 0.75rem/0.75rem $font-vietnam;
+          letter-spacing: -0.04em;
+          color: $color-white;
+          white-space: nowrap !important;
+        }
+      }
+    }
+  }
+}
