@@ -232,7 +232,7 @@
           </tr>
         </table>
       </div>
-      <a href="https://bit.ly/POMerchJazzineer" class="merch-button mx-auto mb-5">Order Now!</a>
+      <a href="https://bit.ly/POMerchJazzineer" target="_blank" class="merch-button mx-auto mb-5">Order Now!</a>
     </div>
   </section>
   <!-- End of Bundles -->

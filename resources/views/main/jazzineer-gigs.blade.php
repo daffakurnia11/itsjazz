@@ -37,7 +37,7 @@
             2022
           </button>
         </div>
-        <div id="journey2021" class="accordion-collapse" data-bs-parent="#catalog-content">
+        <div id="journey2021" class="accordion-collapse collapse show" data-bs-parent="#catalog-content">
           <!-- January 2021 -->
           <button class="journey-month text-center collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#january2021" aria-expanded="false" aria-controls="january2021">

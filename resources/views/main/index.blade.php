@@ -102,7 +102,7 @@
     <div class="container">
       <div class="d-flex justify-content-between mb-4">
         <h2 class="segment-title">ITS Jazz Segment</h2>
-        <a href="" class="segment-button">Learn More</a>
+        <a href="/its-jazz-segment" class="segment-button">Learn More</a>
       </div>
       <div class="row">
         <div class="col-6 col-lg-3 my-3">
@@ -160,7 +160,7 @@
               <img class="gigs-picture my-3" src="/img/gigs/gigs-4.png" alt="Jazzineer Gigs">
             </div>
           </div>
-          <a href="" class="gigs-button mx-auto my-4">Show More</a>
+          <a href="/jazzineer-gigs" class="gigs-button mx-auto my-4">Show More</a>
         </div>
       </div>
     </div>
