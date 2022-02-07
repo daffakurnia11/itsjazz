@@ -101,17 +101,6 @@ if (notif) {
   }
 }
 
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
-  var height = 150;
-
-  if (scroll >= height) {
-    $(".navbar").addClass('bg-dark');
-  } else {
-    $(".navbar").removeClass('bg-dark');
-  }
-});
-
 $(function () {
   $('.segment-picture').on('click', function () {
     $('.segment-picture').removeClass('active');

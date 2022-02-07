@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\JazzineerGig;
 use App\Models\Subscription;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -31,8 +32,14 @@ class PagesController extends Controller
 
     public function jazzineer_gigs()
     {
+        $monthlist = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        $yearlist = ['2021', '2022'];
+
         return view('main.jazzineer-gigs', [
-            'title'     => 'Jazzineer Gigs'
+            'title'     => 'Jazzineer Gigs',
+            'contents'  => JazzineerGig::all(),
+            'months'    => $monthlist,
+            'years'     => $yearlist
         ]);
     }
 
