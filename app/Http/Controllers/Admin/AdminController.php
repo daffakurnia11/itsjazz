@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Shortlink;
+use App\Models\Subscription;
 use App\Models\Visitor;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -85,6 +86,9 @@ class AdminController extends Controller
 
             'visitors'          => Visitor::count(),
             'visitor_inc'       => Visitor::whereDate('created_at', Carbon::today())->count(),
+
+            'subscriptions'     => Subscription::count(),
+            'subscription_inc'  => Subscription::whereDate('created_at', Carbon::today())->count(),
         ]);
     }
 }

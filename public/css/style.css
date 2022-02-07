@@ -1224,4 +1224,39 @@ footer .footer-title em {
   padding: 0.5rem 2rem;
   text-transform: uppercase;
 }
+
+#errorPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#errorPage .error-state {
+  font: bold 4rem/5rem "Be Vietnam Pro", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  width: fit-content;
+}
+
+@media screen and (max-width: 576px) {
+  #errorPage .error-state {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+#errorPage .error-state::after {
+  display: block;
+  content: "";
+  margin-top: 1.25rem;
+  height: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  #errorPage .error-state::after {
+    height: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@
 
   <h6 class="mb-0 text-uppercase">Overview</h6>
   <hr>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-6">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3">
     <div class="col">
       <div class="card radius-10">
         <div class="card-body">
@@ -59,6 +59,29 @@
               <span class="text-success">+{{ $visitor_inc }} dari kemarin</span>
             @else
               <span class="text-warning">{{ $visitor_inc }}</span>
+            @endif
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card radius-10">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="">
+              <p class="mb-1">Subscription</p>
+              <h4 class="mb-0 text-success">{{ $subscriptions }}</h4>
+            </div>
+            <div class="ms-auto fs-2 text-success">
+              <i class="bi bi-envelope"></i>
+            </div>
+          </div>
+          <div class="border-top my-2"></div>
+          <small class="mb-0">
+            @if ($subscription_inc > 0)
+              <span class="text-success">+{{ $subscription_inc }} dari kemarin</span>
+            @else
+              <span class="text-warning">{{ $subscription_inc }}</span>
             @endif
           </small>
         </div>

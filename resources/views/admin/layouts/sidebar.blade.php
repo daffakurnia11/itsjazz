@@ -47,6 +47,14 @@
         <div class="menu-title">Jazzineer Gigs</div>
       </a>
     </li>
+    <li class="menu-label">Form Registration</li>
+    <li class="{{ Request::is('/admin/subscription') ? 'mm-active' : '' }}">
+      <a href="/admin/subscription">
+        <div class="parent-icon"><i class="bi bi-envelope"></i>
+        </div>
+        <div class="menu-title">Subscription</div>
+      </a>
+    </li>
 
   </ul>
   <!--end navigation-->

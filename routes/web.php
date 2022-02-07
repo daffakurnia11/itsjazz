@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ShortlinkController;
 use App\Http\Controllers\JazzineerGigController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Admin\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,7 +38,8 @@ Route::prefix('admin')->middleware('auth')->group(function () {
   Route::resource('shortlink', ShortlinkController::class)->except('show');
   Route::resource('jazzineer-gigs', JazzineerGigController::class)->parameters([
     'jazzineer-gigs'  => 'jazzineerGig'
-  ]);
+  ])->except('show');
+  Route::resource('subscription', SubscriptionController::class)->except(['create', 'store', 'show', 'edit', 'update']);
 });
 
 Route::get('/visitor_data', [AdminController::class, 'visitor_data']);

@@ -99,6 +99,15 @@ if (notif) {
       msg: 'Konten berhasil dihapus!'
     });
   }
+  if (notif == "Subscription deleted") {
+    Lobibox.notify('success', {
+      pauseDelayOnHover: true,
+      continueDelayOnInactiveTab: false,
+      position: 'top right',
+      icon: 'bx bx-check-circle',
+      msg: 'Subscription berhasil dihapus!'
+    });
+  }
 }
 
 $(function () {
