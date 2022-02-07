@@ -39,6 +39,14 @@
         </li>
       </ul>
     </li>
+    <li class="menu-label">Content Management</li>
+    <li class="{{ Request::is('/admin/jazzineer-gigs') ? 'mm-active' : '' }}">
+      <a href="/admin/jazzineer-gigs">
+        <div class="parent-icon"><i class="bi bi-images"></i>
+        </div>
+        <div class="menu-title">Jazzineer Gigs</div>
+      </a>
+    </li>
 
   </ul>
   <!--end navigation-->
