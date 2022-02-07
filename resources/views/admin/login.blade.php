@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/img/logo.png" type="image/png" />
+  <link rel="icon" href="/img/logo-only.png" type="image/png" />
   <!-- Bootstrap CSS -->
   <link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="/vendor/bootstrap/dist/css/bootstrap-extended.css" rel="stylesheet" />
